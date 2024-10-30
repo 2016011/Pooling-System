@@ -72,11 +72,9 @@ $polls = $conn->query("SELECT poll_id, question FROM polls")->fetchAll(PDO::FETC
     </style>
 </head>
 <body>
-
-<a href="?logout=true" class="logout-button">
+    <a href="?logout=true" class="logout-button">
         <span class="logout-icon">🔒</span> Logout
     </a>
-    
     <h2>Admin Dashboard</h2>
 
     <div class="tabs">
