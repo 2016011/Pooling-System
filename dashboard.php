@@ -20,7 +20,7 @@ $polls = $conn->query("SELECT poll_id, question FROM polls")->fetchAll(PDO::FETC
 <html>
 <head>
 <style>
-        /* General styles */
+        
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -28,7 +28,7 @@ $polls = $conn->query("SELECT poll_id, question FROM polls")->fetchAll(PDO::FETC
             align-items: center;
         }
         
-        /* Logout button styles */
+        
         .logout-button {
             position: absolute;
             top: 10px;
@@ -51,7 +51,6 @@ $polls = $conn->query("SELECT poll_id, question FROM polls")->fetchAll(PDO::FETC
             margin-right: 5px;
         }
         
-        /* Tabs and table styles */
         .tabs { display: flex; margin-top: 20px; }
         .tab { padding: 10px 20px; cursor: pointer; background-color: #f1f1f1; border: 1px solid #ccc; margin-right: 5px; font-weight: bold; }
         .tab:hover { background-color: #ddd; }
